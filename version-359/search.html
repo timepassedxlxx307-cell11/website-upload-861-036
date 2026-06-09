@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索筛选-高清剧集大全</title>
+  <meta name="description" content="搜索高清影视片库，支持按片名、地区、年份、类型和标签筛选在线观看影片。">
+  <meta name="keywords" content="免费高清国产影视大全_在线观看最新电视剧,国产,视频,免费,在线观看,高清,影视大全,搜索,筛选">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="site-logo" href="./index.html" aria-label="高清剧集大全">
+      <span class="logo-mark">▶</span>
+      <span>高清剧集大全</span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="展开导航">☰</button>
+    <nav class="nav-links" data-nav-menu>
+        <a href="./index.html">首页</a>
+        <a href="./category-domestic.html">国产影视</a>
+        <a href="./category-series.html">最新电视剧</a>
+        <a href="./category-euro-us.html">欧美电影</a>
+        <a href="./category-japan-korea.html">日韩电影</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./categories.html" class="is-active">分类</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索视频" aria-label="搜索视频">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero search-hero">
+    <div class="container">
+      <span class="section-kicker">Search</span>
+      <h1>搜索与筛选</h1>
+      <p>输入片名、地区、年份、题材或标签，快速定位想看的高清影视内容。</p>
+      <div class="search-panel">
+        <input type="search" id="global-search" placeholder="输入关键词搜索" aria-label="搜索关键词">
+        <select id="region-filter" aria-label="地区筛选">
+          <option value="">全部地区</option>
+          <option value="中国">中国</option>
+          <option value="美国">美国</option>
+          <option value="日本">日本</option>
+          <option value="韩国">韩国</option>
+          <option value="英国">英国</option>
+          <option value="法国">法国</option>
+        </select>
+        <select id="type-filter" aria-label="类型筛选">
+          <option value="">全部类型</option>
+          <option value="电影">电影</option>
+          <option value="电视剧">电视剧</option>
+          <option value="剧集">剧集</option>
+          <option value="动画">动画</option>
+          <option value="综艺">综艺</option>
+        </select>
+        <button type="button" id="search-reset">重置</button>
+      </div>
+    </div>
+  </section>
+  <section class="section-block">
+    <div class="container movie-grid" id="search-results" aria-live="polite"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-logo" href="./index.html">高清剧集大全</a>
+      <p>作为一个免费高清国产影视大全，本站支持在线观看最新电视剧和电影。资源全面，更新迅速，致力于打造最全的国产线上片库。</p>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <div class="footer-links">
+        <a href="./category-domestic.html">国产影视</a>
+        <a href="./category-euro-us.html">欧美电影</a>
+        <a href="./category-japan-korea.html">日韩电影</a>
+        <a href="./category-series.html">最新电视剧</a>
+        <a href="./category-animation.html">动画电影</a>
+        <a href="./category-variety.html">综艺纪实</a>
+        <a href="./category-action-suspense.html">悬疑动作</a>
+        <a href="./catalog-1.html">全部片库</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="./assets/js/search-index.js" defer></script>
+  <script src="./assets/js/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
